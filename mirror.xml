@@ -24,6 +24,8 @@
 	<project remote="busybox" path="busybox" name="busybox.git" />
 	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
 	<project remote="landing-teams" path="edk2" name="working/arm/edk2.git" />
+	<remote name="linaro" fetch="https://git.linaro.org" />
+	<remote name="u-boot" fetch="git://git.denx.de" />
 
 
 <!--
@@ -32,6 +34,12 @@
 	<project remote="96boards" path="linux" name="linux" revision="hikey" />
 	<project remote="linux" path="linux" name="linux" />
 -->
+
+	<!-- U-Boot -->
+	<project remote="u-boot" path="u-boot" name="u-boot.git" />
+
+	<!-- Juno Recovery files -->
+	<project remote="linaro" path="vexpress-firmware" name="arm/vexpress-firmware.git" />
 
 
 	<project remote="linaro-swg" path="linux" name="linux.git" />
