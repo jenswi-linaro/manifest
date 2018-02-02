@@ -10,23 +10,23 @@
 	<remote name="sfnet" fetch="http://git.code.sf.net/p/strace" />
 
 	<default remote="optee" revision="master" />
+	<remote name="jenswi" fetch="https://github.com/jenswi-linaro" />
 
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os.git" />
-	<project path="optee_client" name="optee_client.git" />
-	<project path="optee_test" name="optee_test.git" />
-
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+	<project remote ="jenswi" path="optee_client" name="optee_client.git" revision="cmake" />
+	<project remote ="jenswi" path="optee_test" name="optee_test.git" revision="cmake" />
 
 	<!-- Sample applications -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
+	<project remote ="jenswi" path="optee_examples" name="optee_examples.git" revision="cmake" />
+
+	<project remote="busybox" path="buildroot" name="buildroot.git" revision="master" />
+	<project remote="jenswi" path="br-ext-optee" name="br-ext-optee.git" revision="master" />
 
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
 
 	<!-- linaro-swg gits -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
 
 	<!-- Benchmark app -->
@@ -46,7 +46,7 @@
 	<project remote="sfnet" path="strace" name="code" />
 
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
+	<project remote="jenswi" path="build" name="build.git" revision="br">
 		<linkfile src="qemu_v8.mk" dest="build/Makefile" />
 		<linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
 	</project>
