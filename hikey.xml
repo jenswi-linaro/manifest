@@ -22,13 +22,15 @@
 	<!-- burn-boot -->
 	<project remote="96b-hk" path="burn-boot" name="burn-boot" />
 
+	<remote name="jenswi" fetch="https://github.com/jenswi-linaro" />
+
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os" />
-	<project path="optee_client" name="optee_client" />
-	<project path="optee_test" name="optee_test" />
+	<project remote ="jenswi" path="optee_client" name="optee_client.git" revision="cmake" />
+	<project remote ="jenswi" path="optee_test" name="optee_test.git" revision="cmake" />
 
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+	<project remote="busybox" path="buildroot" name="buildroot.git" revision="master" />
+	<project remote="jenswi" path="br-ext-optee" name="br-ext-optee.git" revision="master" />
 
 	<!-- ARM gits -->
 	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" />
@@ -44,7 +46,7 @@
 	<project remote="linaro-swg" path="linux" name="linux" revision="optee" />
 
 	<!-- Sample applications -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
+	<project remote ="jenswi" path="optee_examples" name="optee_examples.git" revision="cmake" />
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
@@ -53,7 +55,7 @@
 	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
 
 	<!-- Build -->
-	<project path="build" name="build" >
+	<project remote="jenswi" path="build" name="build.git" revision="br">
 		<linkfile src="hikey.mk" dest="build/Makefile" />
 	</project>
 </manifest>
