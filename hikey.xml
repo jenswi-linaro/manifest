@@ -48,9 +48,6 @@
 	<!-- Sample applications -->
 	<project remote ="jenswi" path="optee_examples" name="optee_examples.git" revision="cmake" />
 
-	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
-
 	<!-- patches -->
 	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
 
