@@ -42,9 +42,6 @@
 	<project remote="tianocore" path="edk2" name="edk2.git" />
 	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" />
 
-	<!-- strace -->
-	<project remote="sfnet" path="strace" name="code" />
-
 	<!-- Build -->
 	<project remote="jenswi" path="build" name="build.git" revision="br">
 		<linkfile src="qemu_v8.mk" dest="build/Makefile" />
