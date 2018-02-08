@@ -10,7 +10,7 @@
 
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os.git" />
-	<project remote="jenswi" path="optee_client" name="optee_client.git" revision="cmake" />
+	<project path="optee_client" name="optee_client.git" />
 	<project remote="jenswi" path="optee_test" name="optee_test.git" revision="cmake" />
 
 	<project remote="busybox" path="buildroot" name="buildroot.git" revision="master" />
