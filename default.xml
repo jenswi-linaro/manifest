@@ -23,10 +23,10 @@
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
 
 	<!-- Sample applications -->
-	<project remote="jenswi" path="optee_examples" name="optee_examples.git"  revision="cmake" />
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Benchmark app -->
-	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
+	<project remote="jenswi" path="optee_benchmark" name="optee_benchmark.git" revision="cmake"/>
 
 	<!-- Temporary use the defined commit since upstream tip didn't work -->
 	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
