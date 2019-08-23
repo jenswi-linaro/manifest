@@ -6,21 +6,21 @@
 
         <!-- OP-TEE gits -->
         <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="optee_os"             name="jenswi-linaro/optee_os.git"                 revision="spci_alpha2" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" 		       revision="e4f6f76b4cb5763112f4722981f84a26f4ac7e55" />
+        <project path="build"                name="jenswi-linaro/build.git"                    revision="qemu_spci_alpha2">
                 <linkfile src="qemu_v8.mk" dest="build/Makefile" />
                 <linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="9823b258b332b4ac98e05fa23448bbc9e937b24c" />
+        <project path="linux"                name="jenswi-linaro/linux-1.git"                  revision="spci_alpha2" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
         <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="34efb683e32254b8c325ac3071c5776d243a7b99" />
+        <project path="arm-trusted-firmware" name="jenswi-linaro/arm-trusted-firmware.git" revision="qemu_spci_alpha2" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="dd4cae4d82c7477273f3da455084844db5cca0c0" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v3.1.0-rc3" clone-depth="1" />
