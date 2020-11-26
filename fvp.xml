@@ -7,15 +7,15 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_client"         name="jenswi-linaro/optee_client.git" revision="ffa_spmc" />
+        <project path="optee_os"             name="jenswi-linaro/optee_os.git" revision="ffa_spmc" />
         <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="jenswi-linaro/build.git"			revision="ffa_spmc">
                 <linkfile src="fvp.mk" dest="build/Makefile" />
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
+        <project path="linux"                name="jenswi-linaro/linux-1.git"                  revision="ffa_spmc" />
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
@@ -23,5 +23,6 @@
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="dd4cae4d82c7477273f3da455084844db5cca0c0" />
         <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="02daa58c21f89628b4d8c76f95f3a554289149bc" />
         <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.2" clone-depth="1" remote="tfo" />
+        <project path="trusted-firmware-a"   name="jenswi-linaro/arm-trusted-firmware.git" revision="ffa_spmc" />
+        <project path="hafnium"   name="hafnium/hafnium.git"           revision="ffa_rel_proto" remote="tfo" />
 </manifest>
