@@ -9,7 +9,7 @@
         <!-- OP-TEE gits -->
         <project path="optee_client"         name="jenswi-linaro/optee_client.git" revision="ffav4_spmc" />
         <project path="optee_os"             name="jenswi-linaro/optee_os.git" revision="ffav4_spmc" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" revision="b35df64954ef96e09c0d5573014f4d1432dbc92f" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" revision="e86aba278fa505f4420da9ac384b95a42d6f83c0" />
         <project path="build"                name="jenswi-linaro/build.git"			revision="ffav4_spmc">
                 <linkfile src="fvp.mk" dest="build/Makefile" />
         </project>
