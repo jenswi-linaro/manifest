@@ -7,7 +7,7 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="optee_client"         name="jenswi-linaro/optee_client.git" revision="ffav4_spmc" />
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
         <project path="optee_os"             name="jenswi-linaro/optee_os.git" revision="ffav4_spmc" />
         <project path="optee_test"           name="OP-TEE/optee_test.git" revision="e86aba278fa505f4420da9ac384b95a42d6f83c0" />
         <project path="build"                name="jenswi-linaro/build.git"			revision="ffav4_spmc">
