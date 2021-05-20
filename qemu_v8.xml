@@ -2,6 +2,7 @@
 <manifest>
         <remote name="github"   fetch="https://github.com" />
         <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
+        <remote name="u-boot"   fetch="https://gitlab.denx.de/u-boot" />
 
         <default remote="github" revision="master" />
 
@@ -22,7 +23,9 @@
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.02" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="refs/tags/edk2-stable202102" sync-s="true" />
+        <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"/>
         <project path="mbedtls"              name="ARMmbed/mbedtls.git"                   revision="refs/tags/mbedtls-2.16.0" clone-depth="1" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v6.0.0" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.3" clone-depth="1" remote="tfo" />
+        <project path="u-boot"               name="apalos/u-boot.git"                     revision="rpmb_emulation_optee_ci" />
 </manifest>
