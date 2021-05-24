@@ -10,7 +10,7 @@
         <project path="optee_client"         name="OP-TEE/optee_client.git" />
         <project path="optee_os"             name="OP-TEE/optee_os.git" />
         <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="jenswi-linaro/build.git"              revision="qemu_v8_stmm">
                 <linkfile src="qemu_v8.mk" dest="build/Makefile" />
         </project>
 
