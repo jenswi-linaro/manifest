@@ -7,14 +7,14 @@
 
         <!-- OP-TEE gits -->
         <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="optee_os"             name="jenswi-linaro/optee_os.git" revision="virt_ffa"/>
+        <project path="optee_test"           name="OP-TEE/optee_test.git" revision="8a698baf9e8e010e4d8d52e6aded42dfc31e5b25" />
+        <project path="build"                name="jenswi-linaro/build.git" revision="xen_ffa" >
                 <linkfile src="qemu_v8.mk" dest="build/Makefile" />
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
+        <project path="linux"                name="jenswi-linaro/linux-1.git"                  revision="refs/tags/v5.19-rc1" clone-depth="1" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
@@ -24,6 +24,6 @@
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                   revision="refs/tags/mbedtls-2.26.0" clone-depth="1" />
         <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="8520a2018705edcebfb7e729bd2ced12414fc052" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v6.0.0" clone-depth="1" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo" />
+        <project path="trusted-firmware-a"   name="jenswi-linaro/arm-trusted-firmware.git"           revision="xen_ffa" remote="github" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2021.04" remote="u-boot" clone-depth="1" />
 </manifest>
