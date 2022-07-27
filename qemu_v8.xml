@@ -7,9 +7,9 @@
 
         <!-- OP-TEE gits -->
         <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_os"             name="jenswi-linaro/optee_os.git" revision="poc/handoff" />
         <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="jenswi-linaro/build.git" revision="poc/handoff">
                 <linkfile src="qemu_v8.mk" dest="build/Makefile" />
         </project>
 
@@ -24,6 +24,6 @@
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                   revision="refs/tags/mbedtls-2.26.0" clone-depth="1" />
         <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="3272b38b013395e3376a38af6315633239d26c1c" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v7.0.0" clone-depth="1" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo" />
-        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2021.04" remote="u-boot" clone-depth="1" />
+        <project path="trusted-firmware-a"   name="jenswi-linaro/arm-trusted-firmware.git"           revision="poc/handoff" />
+        <project path="u-boot"               name="jenswi-linaro/u-boot.git"                            revision="poc/handoff" />
 </manifest>
