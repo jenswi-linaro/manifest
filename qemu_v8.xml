@@ -25,6 +25,6 @@
         <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="0c7d3a6660e156f7618e2b317f8ab18d6d049548" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="28fb921f02ef46676eb4b8a2eb9fb928f756b208" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="f4d8ed50d27687d437e6885d2b6445a720ae9f69" remote="tfo" />
-        <project path="hafnium"   name="jenswi-linaro/hafnium.git" revision="qemu_sel2" />
+        <project path="hafnium"   name="hafnium/hafnium.git" revision="b697ad0f3dd06864409201d52ad45e06b2945600" remote="tfo" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2021.04" remote="u-boot" clone-depth="1" />
 </manifest>
