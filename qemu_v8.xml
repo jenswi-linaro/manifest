@@ -14,7 +14,7 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
+        <project path="linux"                name="torvalds/linux.git"                  revision="4fe89d07dcc2804c8b562f6c7896a45643d34b2f" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
