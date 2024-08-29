@@ -4,7 +4,7 @@
         <remote name="u-boot"   fetch="https://source.denx.de/u-boot" />
 
         <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="jenswi-linaro/build.git" revision="prototype/sdp-v5" >
                 <linkfile src="rockpi4.mk" dest="build/Makefile" />
         </project>
 
